@@ -10,10 +10,11 @@ int main()
 
     cout<<"Prime Factor is:";
 
-    for(int i=1;i<number;i++)
+    for(int i=2;i<=number;i++)
     {
-        if(number%i==0){
+        while(number%i==0){
             cout<<i<<" ";
+            number=number/i;
         }
     }
     return 0;
